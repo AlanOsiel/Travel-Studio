@@ -3,105 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fotografía Profesional</title>
+  <title>Travel Studio</title>
+
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"> -->
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- NAVEGACIÓN PRINCIPAL -->
   <header>
     <nav class="nav">
-      <!-- <h2>Travel Studio</h2> -->
       <a href="index.html" class="logo-link">
         <img src="images/travel_studio_blanco.png" alt="Travel Studio Logo" class="logo-img">
       </a>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- HERO -->
-  <!-- <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h1></h1>
-      <p>Fotografía profesional para eventos y sesiones</p>
-      <a href="https://wa.me/8447594966" target="_blank" class="btn">Contáctame</a>
-    </div>
-  </section> -->
   <section id="inicio" class="hero">
     <div class="hero-text">
-      <p>Fotografía profesional para eventos y sesiones</p> <!-- Subtítulo pequeño arriba -->
-      <h1>Capturando momentos únicos</h1>
-      <a href="https://wa.me/8447594966" target="_blank" class="btn">Agendar Sesión</a>
+      <p class="subtitle">Travel Studio</p>
+      <h1>Momentos que trascienden</h1>
+      <p class="tagline">Fotografía profesional con enfoque editorial</p>
+      <div class="hero-btns">
+        <!-- <a href="#contacto" class="btn btn-whatsapp">Agendar ahora</a> -->
+        <a href="https://wa.me/8447594966" target="_blank" class="btn">Agendar ahora</a>
+        <!-- <a href="portafolio.html" class="btn">Ver Trabajo</a> -->
+      </div>
     </div>
   </section>
 
   <!-- PORTAFOLIO -->
-  <section id="portafolio" class="section">
-    <h2>Portafolio</h2>
-
-    <!-- <div class="filters">
-      <button onclick="filterSelection('all')">Todos</button>
-      <button onclick="filterSelection('bodas')">Bodas</button>
-      <button onclick="filterSelection('eventos')">Eventos</button>
-      <button onclick="filterSelection('sesiones')">Sesiones</button>
-    </div> -->
-    <div class="filters">
-      <button class="active" onclick="filterSelection('all')">Colección Completa</button>
-      <button onclick="filterSelection('bodas')">Bodas</button>
-      <button onclick="filterSelection('eventos')">Eventos</button>
-      <button onclick="filterSelection('sesiones')">Retratos</button>
-    </div>
-
+  <section class="section">
+    <p class="mini-title">Explora</p>
+    <h2>La Colección</h2>
+    
     <div class="gallery">
-      <img src="images/img1.jpg" class="item bodas">
-      <img src="images/img2.jpg" class="item eventos">
-      <img src="images/img3.jpg" class="item sesiones">
-      <img src="images/img4.jpg" class="item bodas">
-      <img src="images/img5.jpg" class="item eventos">
-      <img src="images/img6.jpg" class="item sesiones">
+      <!-- Solo las 6 fotos más impactantes -->
+      <img src="images/boda1.jpg" class="item" alt="Boda Editorial">
+      <img src="images/comunion.jpg" class="item" alt="Retrato Profesional">
+      <img src="images/xv.jpg" class="item" alt="Evento Especial">
+      <img src="images/pareja.jpg" class="item" alt="Sesión Pareja">
+      <img src="images/boda2.jpg" class="item" alt="Boda Destino">
+      <img src="images/pareja2.jpg" class="item" alt="Lifestyle">
+    </div>
+
+    <div style="margin-top: 50px;">
+      <a href="portafolio.html" class="btn2">Explorar Portafolio</a>
     </div>
   </section>
 
-  <!-- SOBRE MI -->
+  <!-- SOBRE MÍ -->
   <section id="sobre-mi" class="section dark">
-    <h2>Sobre mí</h2>
-    <p>Soy fotógrafo apasionado por capturar momentos especiales. Mi estilo combina creatividad y naturalidad.</p>
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Detrás de la lente</h2>
+        <p>Travel Studio es una agencia de fotografía y video mexicana dispuesta a contar su historia de amor con las más bonitas y emotivas capturas tomadas el día de su boda.</p>
+        <p>Con prolongada experiencia en el sector, cada foto y video que tengan en sus manos les transportarán a esos momentos vividos en tan especial fecha. Su equipo de trabajo asumirá su celebración con la responsabilidad y seriedad que se merecen.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- SERVICIOS -->
+  <!-- PREVIEW DE SERVICIOS -->
   <section id="servicios" class="section">
-    <h2>Servicios</h2>
+    <p class="mini-title"></p>
+    <h2>Nuestras Sesiones</h2>
     <div class="cards">
       <div class="card">
-        <h3>Sesión Básica</h3>
-        <p>Sesión individual o pareja</p>
+        <h3>Retrato & Lifestyle</h3>
+        <p>Sesiones individuales diseñadas para resaltar tu personalidad única.</p>
       </div>
       <div class="card">
-        <h3>Eventos</h3>
-        <p>Cobertura de eventos sociales</p>
+        <h3>Bodas & Unión</h3>
+        <p>Cobertura completa del gran día con un estilo editorial y sofisticado.</p>
       </div>
       <div class="card">
-        <h3>Bodas</h3>
-        <p>Captura completa de tu gran día</p>
+        <h3>Eventos Sociales</h3>
+        <p>Capturamos la energía y los detalles de tus celebraciones más importantes.</p>
       </div>
+    </div>
+    <div style="margin-top: 50px;">
+      <a href="servicios.html" class="btn2">Ver Paquetes</a>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="section dark">
-    <h2>Contacto</h2>
-    <p>¿Listo para tu sesión? Escríbeme directamente.</p>
-    <a href="https://wa.me/8447594966" target="_blank" class="btn">WhatsApp</a>
+  <!-- INSTAGRAM / REELS FEED -->
+  <section class="section dark">
+    <p class="mini-title">Instagram</p>
+    <h2>Lo nuevo en redes</h2>
+    <!-- Placeholder para el Widget de Elfsight o Behold -->
+    <div class="social-feed-container">
+        <p style="color: #888; font-style: italic;">Cargando feed de @travelstudioslw...</p>
+        <!-- Widget -->
+        <div class="behold-widget-container"></div> 
+    </div>
+  </section>
+
+  <!-- CONTACTO FINAL -->
+  <section id="contacto" class="section">
+    <h2>¿Hacemos algo increíble?</h2>
+    <p>Cuéntame sobre tu proyecto y vamos a capturar algo especial juntos.</p>
+    <a href="https://wa.me/8447594966" target="_blank" class="btn btn-whatsapp" style="margin-top: 30px;">
+      Enviar mensaje por WhatsApp
+    </a>
   </section>
 
   <footer>
-    <p>© 2026 Fotografía Profesional</p>
+    <p>© 2026 Travel Studio | Saltillo, Coah.</p>
   </footer>
 
   <script src="js/main.js"></script>
