@@ -1,0 +1,420 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primario: #000000;
+    --secundario: #ffffff;
+    --acento: #B5A48B; /* Tono champagne/arena */
+    --gris-claro: #f9f9f9;
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-cuerpo: 'Inter', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    line-height: 1.7;
+    color: #333;
+    background-color: var(--secundario);
+}
+
+/* NAVEGACIÓN */
+header {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    color: var(--acento);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    filter: brightness(1.2); /* Hace que el blanco resalte más */
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('../images/img1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: var(--fuente-titulos);
+    font-size: clamp(3rem, 8vw, 5rem); /* Tamaño fluido */
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+.btn2 {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--primario);
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background: #1da851;
+    border-color: #1da851;
+    color: #fff;
+}
+
+/* SECCIONES */
+.section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 400;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: var(--acento);
+    margin: 20px auto;
+}
+
+/* FILTROS */
+.filters {
+    margin-bottom: 40px;
+}
+
+.filters button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    color: #888;
+    transition: var(--transition);
+}
+
+.filters button:hover, .filters button.active {
+    color: var(--primario);
+    font-weight: 600;
+}
+
+/* GALERÍA MASONRY-LIKE */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    filter: grayscale(20%);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* CARDS DE SERVICIOS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--gris-claro);
+    padding: 60px 40px;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    background: #fff;
+    border-color: var(--acento);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* SOBRE MÍ */
+.dark {
+    background: var(--primario);
+    color: #fff;
+    max-width: 100%;
+}
+
+.dark p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 10px;
+    background: #000;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/******************************/
+/* ESTILOS SOLO DE PORTAFOLIO */
+/******************************/
+
+h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 2.2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 400;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-carrusel {
+    position: relative; /* Base para las flechas */
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Cambia esto en tu CSS */
+.visor-imagenes { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: #000;
+}
+
+
+.carrusel-imagen {
+    display: none;
+    width: 100%;
+    height: 70vh; /* 70% de la altura de la pantalla */
+    object-fit: contain; /* Muestra la foto completa sin recortar */
+    animation: fadeIn 0.8s ease;
+}
+
+.carrusel-imagen.activa {
+    display: block;
+}
+
+/* ESTILO DE LAS FLECHAS */
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 20px 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: var(--transition);
+    z-index: 10;
+    user-select: none;
+}
+
+.flecha:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.flecha-izq { left: 0; border-radius: 0 5px 5px 0; }
+.flecha-der { right: 0; border-radius: 5px 0 0 5px; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+    .carrusel-imagen { height: 50vh; }
+    .flecha { padding: 15px 10px; font-size: 1.5rem; }
+}
+
+.section_portafolio {
+    padding: 50px 10px;
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_contacto {
+    padding: 25px 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-portadas {
+    display: grid;
+    /* Esto obliga a tener exactamente 3 columnas en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Responsive: Para que en tablets se vean 2 y en celulares 1 */
+@media (max-width: 992px) {
+    .grid-portadas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-portadas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-portada {
+    position: relative;
+    height: 400px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-portada:hover img {
+    transform: scale(1.1);
+}
+
+.info-portada {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.info-portada h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.btn-cerrar {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
