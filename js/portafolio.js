@@ -89,3 +89,15 @@ document.addEventListener('keydown', (e) => {
         if (e.key === "Escape") cerrarGaleria();
     }
 });
+
+const menuBtn = document.getElementById('mobile-menu');
+const navList = document.getElementById('nav-list');
+
+if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        
+        // Animación opcional de las rayitas
+        menuBtn.classList.toggle('open');
+    });
+}
