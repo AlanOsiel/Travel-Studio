@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes y Servicios | Travel Studio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/servicios.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo-link">
+                <img src="images/travel_studio_blanco.png" alt="Travel Studio Logo" class="logo-img">
+            </a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRECIOS -->
+    <section class="section_servicios">
+
+        <p style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.9rem; color: var(--acento);">Inversion y Detalles</p>
+        <h2>Nuestros Servicios</h2>
+        <p style="max-width: 600px; margin: -30px auto 50px; font-weight: 300;">
+        Selecciona una categoria para ver sus precios y paquetes.
+        </p>
+
+        <!-- Filtros tipo pestañas (Tabs) para cambiar de evento -->
+        <div class="tabs-precios">
+
+            <button class="tab-btn active" onclick="mostrarCategoria('BODAS', this)">Bodas</button>
+            <button class="tab-btn" onclick="mostrarCategoria('XV_ANOS', this)">XV Años</button>
+            <button class="tab-btn" onclick="mostrarCategoria('PINATAS', this)">Piñatas</button>
+            <button class="tab-btn" onclick="mostrarCategoria('BAUTIZOS', this)">Bautizos</button>
+            <button class="tab-btn" onclick="mostrarCategoria('SESIONES EN EXTERIOR', this)">Sesiones en exterior</button>
+            <button class="tab-btn" onclick="mostrarCategoria('SESIONES EN ESTUDIO', this)">Sesiones en estudio</button>
+
+        </div>
+
+        <!-- Contenedor donde aparecerán los paquetes -->
+        <div id="contenedor-paquetes" class="grid-paquetes">
+            <!-- Se llena con JavaScript -->
+        </div>
+    </section>
+
+    <!-- Lightbox sencillo para ver el paquete en pantalla completa al hacer clic -->
+    <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+        <img id="img-zoom" src="" alt="Paquete Grande">
+        <p>Haz clic en cualquier lugar para cerrar</p>
+    </div>
+
+    <!-- CONTACTO FINAL -->
+    <section id="contacto" class="section_contacto dark">
+        <h2>¿Hacemos algo increíble?</h2>
+        <p>Cuéntame sobre tu proyecto y vamos a capturar algo especial juntos.</p>
+        <a href="https://wa.me/8447594966" target="_blank" class="btn btn-whatsapp" style="margin-top: 30px;">
+        Enviar mensaje por WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Travel Studio | Saltillo, Coah.</p>
+    </footer>
+
+    <script src="js/servicios.js"></script>
+</body>
+</html>
