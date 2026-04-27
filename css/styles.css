@@ -263,3 +263,80 @@ footer {
     font-size: 0.7rem;
     text-transform: uppercase;
 }
+
+
+/* ESTILOS MENU MOVIL */
+.menu-toggle {
+    display: none; /* Oculto en PC */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Se muestra en móvil */
+    }
+
+    .nav ul {
+        display: none; /* Se oculta por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        text-align: center;
+        gap: 20px !important;
+    }
+
+    /* Clase que activaremos con JS */
+    .nav ul.active {
+        display: flex;
+    }
+}
+
+/* --- FIX DE OVERFLOW Y RESPONSIVO GENERAL --- */
+
+html, body {
+    overflow-x: hidden; /* Corta cualquier cosa que se salga a la derecha */
+    width: 100%;
+    position: relative;
+}
+
+* {
+    max-width: 100%; /* Evita que cualquier imagen o caja sea más grande que el cel */
+    box-sizing: border-box;
+}
+
+/* Ajuste de títulos para celular */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.2rem !important; /* Títulos más pequeños en móvil */
+        padding: 0 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .section, .section_portafolio, .section_servicios {
+        padding: 60px 15px !important; /* Menos espacio arriba/abajo en móvil */
+    }
+
+    /* Ajuste de la galería del Index */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    }
+}

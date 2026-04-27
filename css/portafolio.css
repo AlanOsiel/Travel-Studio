@@ -418,3 +418,37 @@ h3 {
     border: none;
     cursor: pointer;
 }
+
+/* --- FIX DE OVERFLOW Y RESPONSIVO GENERAL --- */
+
+html, body {
+    overflow-x: hidden; /* Corta cualquier cosa que se salga a la derecha */
+    width: 100%;
+    position: relative;
+}
+
+* {
+    max-width: 100%; /* Evita que cualquier imagen o caja sea más grande que el cel */
+    box-sizing: border-box;
+}
+
+/* Ajuste de títulos para celular */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.2rem !important; /* Títulos más pequeños en móvil */
+        padding: 0 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .section, .section_portafolio, .section_servicios {
+        padding: 60px 15px !important; /* Menos espacio arriba/abajo en móvil */
+    }
+
+    /* Ajuste de la galería del Index */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    }
+}
