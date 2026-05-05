@@ -43,19 +43,20 @@ const paquetesData = {
         { nombre: 'Paquete Premium', img: 'images/precios/XV_ANOS/paquete_premium.jpeg' },
     ],
     'PINATAS': [
-        { nombre: 'Paquete 1 o 2', img: 'images/precios/PINATAS/piñata1-2.jpeg' },
-        { nombre: 'Paquete 3 o 4', img: 'images/precios/PINATAS/piñata3-4.jpeg' }
+        { nombre: 'Paquete 1 y 2', img: 'images/precios/PINATAS/piñata1-2.jpeg' },
+        { nombre: 'Paquete 3 y 4', img: 'images/precios/PINATAS/piñata3-4.jpeg' }
     ],
     'BAUTIZOS': [
-        { nombre: 'Paquete 1 o 2', img: 'images/precios/BAUTIZOS/paquete1-2.jpeg' },
-        { nombre: 'Paquete 3 o 4', img: 'images/precios/BAUTIZOS/paquete3-4.jpeg' }
+        { nombre: 'Paquete 1 y 2', img: 'images/precios/BAUTIZOS/paquete1-2.jpeg' },
+        { nombre: 'Paquete 3 y 4', img: 'images/precios/BAUTIZOS/paquete3-4.jpeg' }
     ],
     'SESIONES EN EXTERIOR': [
-        { nombre: 'Paquete 1 o 2', img: 'images/precios/SESIONES EN EXTERIOR/sesiones1-2.jpeg' },
-        { nombre: 'Paquete 3 o 4', img: 'images/precios/SESIONES EN EXTERIOR/sesiones3-4.jpeg' }
+        { nombre: 'Paquete 1 y 2', img: 'images/precios/SESIONES EN EXTERIOR/sesiones1-2.jpeg' },
+        { nombre: 'Paquete 3 y 4', img: 'images/precios/SESIONES EN EXTERIOR/sesiones3-4.jpeg' }
     ],
     'SESIONES EN ESTUDIO': [
-        { nombre: 'Paquete 1 o 2', img: 'images/precios/SESIONES EN ESTUDIO/sesiones_estudio1-2.jpeg' },
+        { nombre: 'Paquete 1 y 2', img: 'images/precios/SESIONES EN ESTUDIO/sesiones_estudio1-2.jpeg' },
+        { nombre: 'Paquete 1, 2 y 3 de sesiones infantiles (preguntar los fondos disponibles por whatsapp)', img: 'images/precios/SESIONES EN ESTUDIO/estudio-infantil.jpg' },
     ]
 };
 
