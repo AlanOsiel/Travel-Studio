@@ -20,7 +20,13 @@
       <a href="index.html" class="logo-link">
         <img src="images/travel_studio_blanco.png" alt="Travel Studio Logo" class="logo-img">
       </a>
-      <ul>
+      <!-- BOTÓN HAMBURGUESA NUEVO -->
+      <button class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <ul id="nav-list">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="portafolio.html">Portafolio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -31,15 +37,29 @@
   </header>
 
   <!-- HERO -->
-  <section id="inicio" class="hero">
+  <!-- <section id="inicio" class="hero">
     <div class="hero-text">
       <p class="subtitle">Travel Studio</p>
       <h1>Momentos que trascienden</h1>
       <p class="tagline">Fotografía profesional con enfoque editorial</p>
       <div class="hero-btns">
-        <!-- <a href="#contacto" class="btn btn-whatsapp">Agendar ahora</a> -->
         <a href="https://wa.me/8447594966" target="_blank" class="btn">Agendar ahora</a>
-        <!-- <a href="portafolio.html" class="btn">Ver Trabajo</a> -->
+      </div>
+    </div>
+  </section> -->
+  <!-- HERO CON VIDEO -->
+  <section id="inicio" class="hero">
+    <!-- El video de fondo -->
+    <video autoplay muted loop playsinline id="hero-video">
+      <source src="images/video-drone.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-text">
+      <p class="subtitle">Travel Studio</p>
+      <h1>Momentos que trascienden</h1>
+      <p class="tagline">Fotografía y Video con enfoque editorial</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/8447594966" target="_blank" class="btn">Agendar ahora</a>
       </div>
     </div>
   </section>
@@ -107,9 +127,9 @@
         <!-- <p style="color: #888; font-style: italic;">Cargando feed de @travelstudioslw...</p> -->
         <!-- Widget -->
          <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-        <!-- <script src="https://elfsightcdn.com/platform.js" async></script>
+        <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-2a820cec-bddd-42b9-b115-a19580f8d80a" data-elfsight-app-lazy></div>
-        <div class="behold-widget-container"></div>  -->
+        <div class="behold-widget-container"></div> 
     </div>
   </section>
 
