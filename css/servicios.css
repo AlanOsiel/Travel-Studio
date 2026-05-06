@@ -277,6 +277,78 @@ h2::after {
     transition: 0.3s;
 }
 
+
+/* --- ESTILOS UNIFICADOS DE CONTACTO Y REDES --- */
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+}
+
+.mini-title-footer {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    color: var(--acento);
+    margin-bottom: 10px;
+}
+
+.titulo-footer {
+    font-size: 2rem !important;
+    margin-bottom: 25px !important;
+}
+
+.titulo-footer::after {
+    margin: 10px auto !important; /* Ajuste para que la línea no sea tan grande */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--acento);
+    transform: translateY(-3px);
+}
+
+.direccion {
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: rgba(255,255,255,0.8);
+}
+
+.map-link {
+    color: var(--acento);
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--acento);
+    padding-bottom: 5px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.map-link:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex; /* Se muestra en móvil */
@@ -298,6 +370,15 @@ h2::after {
     /* Clase que activaremos con JS */
     .nav ul.active {
         display: flex;
+    }
+            .contacto-grid {
+        grid-template-columns: 1fr; /* Apilados uno sobre otro en móvil */
+        gap: 50px;
+        padding-top: 40px;
+    }
+    
+    .titulo-footer {
+        font-size: 1.8rem !important;
     }
 }
 /* --- FIX DE OVERFLOW Y RESPONSIVO GENERAL --- */
