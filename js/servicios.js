@@ -23,24 +23,24 @@ function filterSelection(category) {
 
 const paquetesData = {
     'BODAS': [
-        { nombre: 'Paquete Basic Digital', img: 'images/precios/BODAS/1.jpeg' },
-        { nombre: 'Paquete Plus Digital', img: 'images/precios/BODAS/2.jpeg' },
         { nombre: 'Paquete Basic', img: 'images/precios/BODAS/3.jpeg' },
-        { nombre: 'Paquete Platinum Digital', img: 'images/precios/BODAS/4.jpeg' },
         { nombre: 'Paquete Plus', img: 'images/precios/BODAS/5.jpeg' },
-        { nombre: 'Paquete Premium Digital', img: 'images/precios/BODAS/6.jpeg' },
         { nombre: 'Paquete Platinum', img: 'images/precios/BODAS/7.jpeg' },
         { nombre: 'Paquete Premium', img: 'images/precios/BODAS/8.jpeg' },
+        { nombre: 'Paquete Basic Digital', img: 'images/precios/BODAS/1.jpeg' },
+        { nombre: 'Paquete Plus Digital', img: 'images/precios/BODAS/2.jpeg' },
+        { nombre: 'Paquete Platinum Digital', img: 'images/precios/BODAS/4.jpeg' },
+        { nombre: 'Paquete Premium Digital', img: 'images/precios/BODAS/6.jpeg' },
     ],
     'XV_ANOS': [
-        { nombre: 'Paquete Basic Digital', img: 'images/precios/XV_ANOS/paquete_basic_digital.jpeg' },
-        { nombre: 'Paquete Plus Digital', img: 'images/precios/XV_ANOS/paquete_plus_digital.jpeg' },
         { nombre: 'Paquete Basic', img: 'images/precios/XV_ANOS/paquete_basic.jpeg' },
-        { nombre: 'Paquete Platinum Digital', img: 'images/precios/XV_ANOS/paquete_platinum_digital.jpeg' },
         { nombre: 'Paquete Plus', img: 'images/precios/XV_ANOS/paquete_plus.jpeg' },
-        { nombre: 'Paquete Premium Digital', img: 'images/precios/XV_ANOS/paquete_premium_digital.jpeg' },
         { nombre: 'Paquete Platinum', img: 'images/precios/XV_ANOS/paquete_platinum.jpeg' },
         { nombre: 'Paquete Premium', img: 'images/precios/XV_ANOS/paquete_premium.jpeg' },
+        { nombre: 'Paquete Basic Digital', img: 'images/precios/XV_ANOS/paquete_basic_digital.jpeg' },
+        { nombre: 'Paquete Plus Digital', img: 'images/precios/XV_ANOS/paquete_plus_digital.jpeg' },
+        { nombre: 'Paquete Platinum Digital', img: 'images/precios/XV_ANOS/paquete_platinum_digital.jpeg' },
+        { nombre: 'Paquete Premium Digital', img: 'images/precios/XV_ANOS/paquete_premium_digital.jpeg' },
     ],
     'PINATAS': [
         { nombre: 'Paquete 1 y 2', img: 'images/precios/PINATAS/piñata1-2.jpeg' },
